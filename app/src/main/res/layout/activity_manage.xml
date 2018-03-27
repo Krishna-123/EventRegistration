@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.krishna.eventregistration.ManageActivity">
+
+
+    <EditText
+        android:id="@+id/rollNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="@string/rollnumber" />
+
+    <Button
+        android:id="@+id/getReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rollNumber"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/rollNumber"
+        android:layout_toRightOf="@+id/rollNumber"
+        android:text="@string/get"
+        android:onClick="OnClickGET"
+        />
+
+    <TextView
+        android:id="@+id/getRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rollNumber"
+        android:layout_alignStart="@+id/rollNumber"
+        android:layout_below="@+id/rollNumber"
+        android:layout_marginTop="53dp"
+        android:hint="@string/enter_the_roll_number_and_hit_get"
+        android:textIsSelectable="true"
+        android:textSize="25sp" />
+
+</RelativeLayout>
